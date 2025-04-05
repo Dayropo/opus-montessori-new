@@ -8,23 +8,23 @@ import { ArrowRight, CalendarDays, ClipboardCheck, FileText, School } from "luci
 
 const steps = [
   {
-    title: "Submit Application",
-    description: "Complete our online application form to begin the admissions process.",
-    icon: <FileText className="h-8 w-8 text-primary" />,
-  },
-  {
-    title: "Schedule a Tour",
-    description: "Visit our campus to see our classrooms and meet our educators.",
+    title: "Step 1",
+    description: "Schedule a parent(s) visit to the school. To schedule a visit please contact us at (630) 568-6787.",
     icon: <CalendarDays className="h-8 w-8 text-primary" />,
   },
   {
-    title: "Child Assessment",
-    description: "We'll schedule a time for your child to visit and interact with our environment.",
+    title: "Step 2",
+    description: "After your visit and if you would like to become a part of our community, submit an application with a non-refundable application fee of $75.00.",
+    icon: <FileText className="h-8 w-8 text-primary" />,
+  },
+  {
+    title: "Step 3",
+    description: "Upon acceptance, return your signed contract with the registration fee and initial installment. This will reserve a place for your child.",
     icon: <ClipboardCheck className="h-8 w-8 text-primary" />,
   },
   {
-    title: "Enrollment",
-    description: "Upon acceptance, complete enrollment forms and secure your child's place.",
+    title: "Step 4",
+    description: "Prior to your child's first day, submit your child's physical and immunization records. Also, bring an original birth certificate. It will be copied for his/her file and returned.",
     icon: <School className="h-8 w-8 text-primary" />,
   },
 ]
@@ -63,12 +63,7 @@ export default function AdmissionsProcess() {
                   <div className="mb-4 p-3 bg-primary/10 rounded-full">
                     {step.icon}
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-primary-foreground text-sm font-medium">
-                      {index + 1}
-                    </div>
-                    <h3 className="text-xl font-semibold">{step.title}</h3>
-                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
                 </CardContent>
               </Card>
@@ -85,7 +80,7 @@ export default function AdmissionsProcess() {
         >
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
             <Link href="/contact" className="flex items-center gap-2">
-              Start Your Application <ArrowRight size={16} />
+              Contact Us <ArrowRight size={16} />
             </Link>
           </Button>
         </motion.div>

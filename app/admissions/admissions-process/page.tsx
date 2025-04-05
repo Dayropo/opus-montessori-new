@@ -1,28 +1,28 @@
+import type { Metadata } from "next"
+import AdmissionsProcess from "@/components/sections/AdmissionsProcess"
 import MainLayout from "@/components/layout/MainLayout"
-import ContactForm from "@/components/sections/ContactForm"
-import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Opus Montessori School",
-  description: "Get in touch with Opus Montessori School. We're here to answer your questions about admissions, programs, and more.",
+  title: "Admissions Process | Opus Montessori",
+  description:
+    "Learn about the admissions process at Opus Montessori School and how to enroll your child.",
 }
 
-export default function ContactPage() {
+export default function AdmissionsProcessPage() {
   return (
     <MainLayout>
       <div className="pt-4">
         <div className="bg-muted/30 py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">
-              Contact Us
+              Admissions Process
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're here to answer your questions and help you learn more about our school.
+              Learn how to enroll your child at Opus Montessori School
             </p>
           </div>
         </div>
-        
-        <ContactForm />
+        <AdmissionsProcess />
       </div>
     </MainLayout>
   )
