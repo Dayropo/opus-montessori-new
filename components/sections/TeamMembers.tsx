@@ -20,9 +20,9 @@ const teamMembers: TeamMember[] = [
       "B.S. Degree Marketing",
       "American Montessori Society certified 0-3 year old",
       "American Montessori Society certified 3-6 year old",
-      "CPR and First Aid – Trained and Certified"
+      "CPR and First Aid - Trained and Certified",
     ],
-    image: "/images/87590462_853140158465803_6632428325438488576_n.jpg"
+    image: "/images/veronica_henderson-garner.webp",
   },
   {
     name: "Kulsoom Razvi",
@@ -31,10 +31,10 @@ const teamMembers: TeamMember[] = [
       "B.S. Degree Management",
       "Over 20 years of classroom experience",
       "American Montessori Society certified 3-6 year old",
-      "CPR and First Aid – Trained and Certified",
-      "Opus employee since 2019"
+      "CPR and First Aid - Trained and Certified",
+      "Opus employee since 2019",
     ],
-    image: "/images/70854342_773946736385146_2250864116405108736_n.jpg"
+    image: "/images/kulsoom_razvi.webp",
   },
   {
     name: "Aparna Ayyagari",
@@ -44,12 +44,13 @@ const teamMembers: TeamMember[] = [
       "American Montessori Society certified 3-6 year old",
       "6 years of Montessori experience",
       "Fluent in Telugu and Hindi",
-      "CPR and First Aid – Trained and certified",
-      "Opus employee since 2022"
-    ]
+      "CPR and First Aid - Trained and certified",
+      "Opus employee since 2022",
+    ],
+    image: "/images/aparna_ayyagari.webp",
   },
   {
-    name: "Yupa \"Tucky\" Swedlund",
+    name: 'Yupa "Tucky" Swedlund',
     title: "Head Teacher (3-6 year-old class)",
     qualifications: [
       "B.S. Degree English",
@@ -57,9 +58,9 @@ const teamMembers: TeamMember[] = [
       "7 years of Montessori experience",
       "Fluent in Thai",
       "Anaphylaxis and Epinephrine Administrator",
-      "Opus employed since 2021"
+      "Opus employed since 2021",
     ],
-    image: "/images/88056876_853140378465781_4036147777854504960_n.jpg"
+    image: "/images/yupa_swedlund.webp",
   },
   {
     name: "Jean DiMonte",
@@ -67,8 +68,9 @@ const teamMembers: TeamMember[] = [
     qualifications: [
       "American Montessori Society Certified 3-6 year old",
       "Montessorian for over 40 years",
-      "Opus employee since 2023"
-    ]
+      "Opus employee since 2023",
+    ],
+    image: "/images/jean_dimonte.webp",
   },
   {
     name: "Adriana Faria",
@@ -79,18 +81,20 @@ const teamMembers: TeamMember[] = [
       "American Montessori Society Trained 0-3 year old",
       "Oakton Community College",
       "CPR and First Aid trained and Certified",
-      "Opus employee since 2022"
-    ]
+      "Opus employee since 2022",
+    ],
+    image: "/images/adriana_faria.webp",
   },
   {
     name: "Janet Handy",
     title: "Assistant to Ms. Adriana (2-3 year-old class)",
     qualifications: [
       "Fluent in Spanish",
-      "CPR and First Aid – Trained and certified",
+      "CPR and First Aid - Trained and certified",
       "11 years of classroom experience",
-      "Opus employee since 2021"
-    ]
+      "Opus employee since 2021",
+    ],
+    image: "/images/janet_handy.webp",
   },
   {
     name: "Laura Lyons",
@@ -98,8 +102,9 @@ const teamMembers: TeamMember[] = [
     qualifications: [
       "Waubonsee Community College",
       "7 years childcare experience",
-      "Opus Employee since 2024"
-    ]
+      "Opus Employee since 2024",
+    ],
+    image: "/images/laura_lyons.webp",
   },
   {
     name: "Beige Garza",
@@ -108,8 +113,9 @@ const teamMembers: TeamMember[] = [
       "5 years of Montessori classroom experience",
       "Anaphylaxis and Epinephrine Administrator",
       "Certified Food Protection Manager",
-      "Opus Employee since 2023"
-    ]
+      "Opus Employee since 2023",
+    ],
+    image: "/images/beige_garza.webp",
   },
   {
     name: "Sarah Serrato",
@@ -121,8 +127,9 @@ const teamMembers: TeamMember[] = [
       "Harper College",
       "Western Illinois University",
       "Fluent in Spanish",
-      "Opus Employee since 2024"
-    ]
+      "Opus Employee since 2024",
+    ],
+    image: "/images/sarah_serrato.webp",
   },
   {
     name: "Hannah Isa",
@@ -132,8 +139,9 @@ const teamMembers: TeamMember[] = [
       "Certificate in Nursing",
       "Fluent in Igbo, Yoruba and Agbor",
       "Nap room helper / Meal Service Attendant",
-      "Opus Employee since 2022"
-    ]
+      "Opus Employee since 2022",
+    ],
+    image: "/images/hannah_isa.webp",
   },
   {
     name: "Lesley Calvert",
@@ -143,18 +151,16 @@ const teamMembers: TeamMember[] = [
       "Opus Joyful Voices Choir Director",
       "10 years of Montessori experience",
       "Substitute Teacher",
-      "Opus Employee since 2022"
+      "Opus Employee since 2022",
     ],
-    image: "/images/198764744_1181479732298509_2531007230526246292_n.jpg"
+    image: "/images/lesley_calvert.webp",
   },
   {
-    name: "Min Jeong \"M.J.\" Chang",
+    name: 'Min Jeong "M.J." Chang',
     title: "Piano Teacher",
-    qualifications: [
-      "Fluent in Korean",
-      "Opus employee since 2022"
-    ]
-  }
+    qualifications: ["Fluent in Korean", "Opus employee since 2022"],
+    image: "/images/min_jeong_chang.webp",
+  },
 ]
 
 const containerVariants = {
@@ -172,7 +178,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5 }
+    transition: { duration: 0.5 },
   },
 }
 
@@ -180,7 +186,7 @@ export default function TeamMembers() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -191,12 +197,12 @@ export default function TeamMembers() {
             Meet Our Team
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Our dedicated staff brings years of experience, passion, and expertise to create a nurturing
-            environment for your child's growth and development.
+            Our dedicated staff brings years of experience, passion, and expertise to create a
+            nurturing environment for your child's growth and development.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
           initial="hidden"
@@ -209,10 +215,13 @@ export default function TeamMembers() {
                 <CardContent className="p-6 flex flex-col items-center text-center">
                   <Avatar className="h-24 w-24 mb-4">
                     {member.image ? (
-                      <AvatarImage src={member.image} alt={member.name} />
+                      <AvatarImage src={member.image} alt={member.name} className="object-cover object-center" />
                     ) : null}
                     <AvatarFallback className="bg-primary/10 text-primary text-xl">
-                      {member.name.split(' ').map(n => n[0]).join('')}
+                      {member.name
+                        .split(" ")
+                        .map(n => n[0])
+                        .join("")}
                     </AvatarFallback>
                   </Avatar>
                   <h3 className="text-xl font-semibold mb-1">Ms. {member.name}</h3>
