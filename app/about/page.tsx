@@ -5,7 +5,7 @@ import CallToAction from "@/components/sections/CallToAction"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Us | Opus Montessori School",
+  title: "About Us",
   description:
     "Learn about Opus Montessori School's philosophy, mission, and meet our dedicated team of educators.",
 }

@@ -4,6 +4,14 @@ All notable changes to the Opus Montessori School website project will be docume
 
 ## [Unreleased]
 
+## [0.1.1] - 2025-04-06
+
+### Changed
+- Simplified page titles across the site by removing "| Opus Montessori School" suffix
+  - Updated metadata for About, Blog, Contact, Donate, and Admissions pages
+  - Updated metadata for individual blog posts
+  - Updated metadata for admissions process and scholarship pages
+
 ## [0.1.0] - 2025-04-06
 
 ### Added
@@ -11,7 +19,7 @@ All notable changes to the Opus Montessori School website project will be docume
   - Individual blog post pages with dynamic routing using slugs
   - YouTube video embedding capability for blog posts
   - Proper paragraph spacing and text formatting in blog content
-  - Not-found page for invalid blog URLs
+  - Custom 404 page for blog posts with user-friendly navigation
   - Responsive text sizing for better mobile experience
 - Social media integration
   - Updated Facebook and Instagram links with proper icons

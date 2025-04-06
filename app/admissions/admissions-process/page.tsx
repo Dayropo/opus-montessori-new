@@ -3,7 +3,7 @@ import AdmissionsProcess from "@/components/sections/AdmissionsProcess"
 import MainLayout from "@/components/layout/MainLayout"
 
 export const metadata: Metadata = {
-  title: "Admissions Process | Opus Montessori",
+  title: "Admissions Process",
   description:
     "Learn about the admissions process at Opus Montessori School and how to enroll your child.",
 }

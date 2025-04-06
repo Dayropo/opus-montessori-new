@@ -51,13 +51,13 @@ export async function generateMetadata({
 
   if (!post) {
     return {
-      title: "Blog Post Not Found | Opus Montessori School",
+      title: "Blog Post Not Found",
       description: "The requested blog post could not be found.",
     }
   }
 
   return {
-    title: `${post.title} | Opus Montessori School`,
+    title: `${post.title}`,
     description: post.excerpt,
   }
 }

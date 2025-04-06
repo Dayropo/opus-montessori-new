@@ -3,7 +3,7 @@ import ContactForm from "@/components/sections/ContactForm"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Opus Montessori School",
+  title: "Contact Us",
   description:
     "Get in touch with Opus Montessori School. We're here to answer your questions about admissions, programs, and more.",
 }

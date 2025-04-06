@@ -7,7 +7,7 @@ import { ArrowRight, GraduationCap, Calendar } from "lucide-react"
 import { AnimatedElement } from "@/components/ui/animated-element"
 
 export const metadata: Metadata = {
-  title: "Admissions | Opus Montessori School",
+  title: "Admissions",
   description: "Learn about our admissions process at Opus Montessori School.",
 }
 
