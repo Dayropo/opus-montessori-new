@@ -44,13 +44,13 @@ async function getPostBySlug(slug: string) {
 
 type Props = {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Record<string, string | string[] | undefined>;
 }
 
 export async function generateMetadata(
-  { params }: Props
+  props: Props
 ): Promise<Metadata> {
-  const post = await getPostBySlug(params.slug);
+  const post = await getPostBySlug(props.params.slug);
 
   if (!post) {
     return {
@@ -65,8 +65,8 @@ export async function generateMetadata(
   }
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug);
+export default async function BlogPostPage(props: Props) {
+  const post = await getPostBySlug(props.params.slug);
 
   if (!post) {
     notFound()
