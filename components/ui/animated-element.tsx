@@ -15,24 +15,24 @@ interface AnimatedElementProps {
 const animations = {
   fadeIn: {
     hidden: { opacity: 0 },
-    visible: { opacity: 1 }
+    visible: { opacity: 1 },
   },
   fadeInUp: {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   },
   fadeInDown: {
     hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   },
   fadeInLeft: {
     hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0 }
+    visible: { opacity: 1, x: 0 },
   },
   fadeInRight: {
     hidden: { opacity: 0, x: 20 },
-    visible: { opacity: 1, x: 0 }
-  }
+    visible: { opacity: 1, x: 0 },
+  },
 }
 
 export function AnimatedElement({
@@ -41,7 +41,7 @@ export function AnimatedElement({
   animation = "fadeIn",
   delay = 0,
   duration = 0.5,
-  once = true
+  once = true,
 }: AnimatedElementProps) {
   const selectedAnimation = animations[animation]
 

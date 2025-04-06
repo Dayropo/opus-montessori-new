@@ -16,8 +16,8 @@ export default function AdmissionsPage() {
     <MainLayout>
       <div className="bg-muted/30 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">Admissions</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h1 className="font-bubblegum-sans text-primary mb-4 text-4xl md:text-5xl">Admissions</h1>
+          <p className="text-muted-foreground mx-auto max-w-2xl">
             Join our community of learners and begin your child&apos;s Montessori journey.
           </p>
         </div>
@@ -25,16 +25,16 @@ export default function AdmissionsPage() {
 
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="mx-auto max-w-4xl">
             <AnimatedElement
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
+              className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-2"
               animation="fadeInUp"
             >
-              <div className="bg-white rounded-lg shadow-md p-8 flex flex-col h-full">
-                <div className="mb-4 p-3 bg-primary/10 rounded-full w-fit">
-                  <GraduationCap className="h-8 w-8 text-primary" />
+              <div className="flex h-full flex-col rounded-lg bg-white p-8 shadow-md">
+                <div className="bg-primary/10 mb-4 w-fit rounded-full p-3">
+                  <GraduationCap className="text-primary h-8 w-8" />
                 </div>
-                <h2 className="text-2xl font-bubblegum-sans text-primary mb-4">
+                <h2 className="font-bubblegum-sans text-primary mb-4 text-2xl">
                   Enrollment Process
                 </h2>
                 <p className="text-muted-foreground mb-6 flex-grow text-sm md:text-base">
@@ -51,11 +51,11 @@ export default function AdmissionsPage() {
                 </Button>
               </div>
 
-              <div className="bg-white rounded-lg shadow-md p-8 flex flex-col h-full">
-                <div className="mb-4 p-3 bg-primary/10 rounded-full w-fit">
-                  <Calendar className="h-8 w-8 text-primary" />
+              <div className="flex h-full flex-col rounded-lg bg-white p-8 shadow-md">
+                <div className="bg-primary/10 mb-4 w-fit rounded-full p-3">
+                  <Calendar className="text-primary h-8 w-8" />
                 </div>
-                <h2 className="text-2xl font-bubblegum-sans text-primary mb-4">
+                <h2 className="font-bubblegum-sans text-primary mb-4 text-2xl">
                   Bright Beginnings Scholarship
                 </h2>
                 <p className="text-muted-foreground mb-6 flex-grow text-sm md:text-base">
@@ -74,7 +74,9 @@ export default function AdmissionsPage() {
             </AnimatedElement>
 
             <AnimatedElement className="text-center" animation="fadeIn" delay={0.2}>
-              <p className="text-base md:text-lg mb-6">Have questions about admissions? We&apos;re here to help!</p>
+              <p className="mb-6 text-base md:text-lg">
+                Have questions about admissions? We&apos;re here to help!
+              </p>
               <Button
                 asChild
                 variant="outline"

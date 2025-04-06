@@ -187,23 +187,23 @@ export default function TeamMembers() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <motion.div
-          className="text-center mb-16"
+          className="mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">
+          <h2 className="font-bubblegum-sans text-primary mb-4 text-3xl md:text-4xl">
             Meet Our Team
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground mx-auto max-w-2xl">
             Our dedicated staff brings years of experience, passion, and expertise to create a
             nurturing environment for your child&apos;s growth and development.
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -211,11 +211,15 @@ export default function TeamMembers() {
         >
           {teamMembers.map((member, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="h-full hover:shadow-md transition-shadow">
-                <CardContent className="p-6 flex flex-col items-center text-center">
-                  <Avatar className="h-24 w-24 mb-4">
+              <Card className="h-full transition-shadow hover:shadow-md">
+                <CardContent className="flex flex-col items-center p-6 text-center">
+                  <Avatar className="mb-4 h-24 w-24">
                     {member.image ? (
-                      <AvatarImage src={member.image} alt={member.name} className="object-cover object-center" />
+                      <AvatarImage
+                        src={member.image}
+                        alt={member.name}
+                        className="object-cover object-center"
+                      />
                     ) : null}
                     <AvatarFallback className="bg-primary/10 text-primary text-xl">
                       {member.name
@@ -224,11 +228,11 @@ export default function TeamMembers() {
                         .join("")}
                     </AvatarFallback>
                   </Avatar>
-                  <h3 className="text-xl font-semibold mb-1">Ms. {member.name}</h3>
-                  <p className="text-primary font-medium mb-4">{member.title}</p>
-                  <ul className="text-sm text-muted-foreground space-y-1 mt-auto">
+                  <h3 className="mb-1 text-xl font-semibold">Ms. {member.name}</h3>
+                  <p className="text-primary mb-4 font-medium">{member.title}</p>
+                  <ul className="text-muted-foreground mt-auto space-y-1 text-sm">
                     {member.qualifications.map((qualification, i) => (
-                      <li key={i} className="list-disc list-inside text-left">
+                      <li key={i} className="list-inside list-disc text-left">
                         {qualification}
                       </li>
                     ))}

@@ -15,8 +15,8 @@ export default function AboutPage() {
     <MainLayout>
       <div className="bg-muted/30 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">About Us</h1>
-          <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
+          <h1 className="font-bubblegum-sans text-primary mb-4 text-4xl md:text-5xl">About Us</h1>
+          <p className="text-muted-foreground mx-auto max-w-2xl text-sm md:text-base">
             Discover our philosophy, mission, and the dedicated team behind Opus Montessori School.
           </p>
         </div>

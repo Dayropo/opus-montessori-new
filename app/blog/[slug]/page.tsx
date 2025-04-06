@@ -34,23 +34,28 @@ const blogPosts = [
     slug: "stephen-curry-montessori",
     videoId: "Pb8kUvKcVTw",
   },
-];
+]
 
 // Helper function to get post by slug
 async function getPostBySlug(slug: string) {
   // In a real app, this would be an API or database call
-  return blogPosts.find(post => post.slug === slug);
+  return blogPosts.find(post => post.slug === slug)
 }
 
-type Props = {
-  params: { slug: string };
-  searchParams: Record<string, string | string[] | undefined>;
+export async function generateStaticParams() {
+  return blogPosts.map(post => ({
+    slug: post.slug,
+  }))
 }
 
-export async function generateMetadata(
-  props: Props
-): Promise<Metadata> {
-  const post = await getPostBySlug(props.params.slug);
+export const generateMetadata = async ({
+  params,
+}: {
+  params: { slug: string }
+}): Promise<Metadata> => {
+  const { slug } = params
+
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     return {
@@ -65,8 +70,9 @@ export async function generateMetadata(
   }
 }
 
-export default async function BlogPostPage(props: Props) {
-  const post = await getPostBySlug(props.params.slug);
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+  const { slug } = params
+  const post = await getPostBySlug(slug)
 
   if (!post) {
     notFound()
@@ -75,7 +81,7 @@ export default async function BlogPostPage(props: Props) {
   return (
     <MainLayout>
       <div className="pt-4">
-        <article className="container mx-auto px-4 py-12 max-w-4xl">
+        <article className="container mx-auto max-w-4xl px-4 py-12">
           <Button variant="ghost" size="sm" className="mb-6" asChild>
             <Link href="/blog" className="flex items-center gap-2">
               <ArrowLeft size={16} />
@@ -84,11 +90,11 @@ export default async function BlogPostPage(props: Props) {
           </Button>
 
           <div className="mb-8">
-            <h1 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">
+            <h1 className="font-bubblegum-sans text-primary mb-4 text-3xl md:text-4xl">
               {post.title}
             </h1>
 
-            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
+            <div className="text-muted-foreground mb-6 flex items-center gap-4 text-sm">
               <div className="flex items-center gap-1">
                 <CalendarDays size={14} />
                 <span>{post.date}</span>
@@ -101,7 +107,7 @@ export default async function BlogPostPage(props: Props) {
           </div>
 
           <div
-            className="prose prose-slate max-w-none [&>p]:mb-6 [&>p:not(:last-child)]:mb-8 text-sm md:text-base"
+            className="prose prose-slate max-w-none text-sm md:text-base [&>p]:mb-6 [&>p:not(:last-child)]:mb-8"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 

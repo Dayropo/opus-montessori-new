@@ -9,14 +9,14 @@ export default function AboutSection() {
   return (
     <section className="py-20 text-sm md:text-base">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-6">
+            <h2 className="font-bubblegum-sans text-primary mb-6 text-3xl md:text-4xl">
               Our Mission
             </h2>
             <p className="text-muted-foreground mb-6">
@@ -26,7 +26,7 @@ export default function AboutSection() {
               of that child&apos;s capabilities.
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-6">
+            <h2 className="font-bubblegum-sans text-primary mb-6 text-3xl md:text-4xl">
               Our Vision
             </h2>
             <p className="text-muted-foreground mb-6">
@@ -41,7 +41,7 @@ export default function AboutSection() {
           </motion.div>
 
           <motion.div
-            className="relative h-[400px] rounded-lg overflow-hidden shadow-xl"
+            className="relative h-[400px] overflow-hidden rounded-lg shadow-xl"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

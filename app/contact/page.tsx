@@ -13,8 +13,8 @@ export default function ContactPage() {
     <MainLayout>
       <div className="bg-muted/30 py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">Contact Us</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+          <h1 className="font-bubblegum-sans text-primary mb-4 text-4xl md:text-5xl">Contact Us</h1>
+          <p className="text-muted-foreground mx-auto max-w-2xl text-sm md:text-base">
             We&apos;re here to answer your questions and help you learn more about our school.
           </p>
         </div>

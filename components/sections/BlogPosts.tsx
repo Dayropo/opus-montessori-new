@@ -50,21 +50,21 @@ export default function BlogPosts() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <motion.div
-          className="text-center mb-16"
+          className="mb-16 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">Our Blog</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="font-bubblegum-sans text-primary mb-4 text-3xl md:text-4xl">Our Blog</h2>
+          <p className="text-muted-foreground mx-auto max-w-2xl">
             Insights, tips, and stories from our Montessori community to help you support your
             child&apos;s development and education.
           </p>
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -72,9 +72,9 @@ export default function BlogPosts() {
         >
           {blogPosts.map(post => (
             <motion.div key={post.id} variants={itemVariants}>
-              <Card className="h-full overflow-hidden border-none shadow-md hover:shadow-lg transition-shadow">
+              <Card className="h-full overflow-hidden border-none shadow-md transition-shadow hover:shadow-lg">
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                  <div className="text-muted-foreground mb-3 flex items-center gap-4 text-sm">
                     <div className="flex items-center gap-1">
                       <CalendarDays size={14} />
                       <span>{post.date}</span>
@@ -84,7 +84,7 @@ export default function BlogPosts() {
                       <span>{post.author}</span>
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 line-clamp-2">
+                  <h3 className="mb-2 line-clamp-2 text-xl font-semibold">
                     <Link
                       href={`/blog/${post.slug}`}
                       className="hover:text-primary transition-colors"

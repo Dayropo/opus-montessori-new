@@ -17,7 +17,9 @@ export default function ContactForm() {
     loading: false,
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
+  ) => {
     const { name, value } = e.target
     setFormState(prev => ({ ...prev, [name]: value }))
   }
@@ -25,12 +27,12 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setFormState(prev => ({ ...prev, loading: true }))
-    
+
     // Simulate form submission
     setTimeout(() => {
-      setFormState(prev => ({ 
-        ...prev, 
-        submitted: true, 
+      setFormState(prev => ({
+        ...prev,
+        submitted: true,
         loading: false,
         name: "",
         email: "",
@@ -44,22 +46,23 @@ export default function ContactForm() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <motion.div 
-          className="text-center mb-12"
+        <motion.div
+          className="mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">
+          <h2 className="font-bubblegum-sans text-primary mb-4 text-3xl md:text-4xl">
             Get in Touch
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            We&apos;d love to hear from you! Fill out the form below and we&apos;ll get back to you as soon as possible.
+          <p className="text-muted-foreground mx-auto max-w-2xl">
+            We&apos;d love to hear from you! Fill out the form below and we&apos;ll get back to you
+            as soon as possible.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -68,23 +71,24 @@ export default function ContactForm() {
           >
             <Card className="overflow-hidden border-none shadow-lg">
               <CardContent className="p-0">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.9168169792235!2d-88.1339!3d41.9676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f1c1f1e2e0001%3A0x8a0c5e1c3c3c3c3c!2s180%20Hawthorne%20Rd%2C%20Barrington%20Hills%2C%20IL%2060010!5e0!3m2!1sen!2sus!4v1617123456789!5m2!1sen!2sus" 
-                  width="100%" 
-                  height="300" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.9168169792235!2d-88.1339!3d41.9676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f1c1f1e2e0001%3A0x8a0c5e1c3c3c3c3c!2s180%20Hawthorne%20Rd%2C%20Barrington%20Hills%2C%20IL%2060010!5e0!3m2!1sen!2sus!4v1617123456789!5m2!1sen!2sus"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Opus Montessori School Location"
                 />
                 <div className="p-6 text-sm md:text-base">
-                  <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
+                  <h3 className="mb-4 text-xl font-semibold">Contact Information</h3>
                   <div className="space-y-4">
                     <div>
                       <p className="font-medium">Address:</p>
                       <p className="text-muted-foreground">
-                        180 Hawthorne Road<br />
+                        180 Hawthorne Road
+                        <br />
                         Barrington Hills, IL 60010
                       </p>
                     </div>
@@ -99,7 +103,8 @@ export default function ContactForm() {
                     <div>
                       <p className="font-medium">Hours:</p>
                       <p className="text-muted-foreground">
-                        Monday - Friday: 7:00 AM - 6:00 PM<br />
+                        Monday - Friday: 7:00 AM - 6:00 PM
+                        <br />
                         Saturday - Sunday: Closed
                       </p>
                     </div>
@@ -118,15 +123,15 @@ export default function ContactForm() {
             <Card className="border-none shadow-lg">
               <CardContent className="p-6">
                 {formState.submitted ? (
-                  <div className="text-center py-12">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary mb-4">
+                  <div className="py-12 text-center">
+                    <div className="bg-primary/10 text-primary mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full">
                       <Send size={32} />
                     </div>
-                    <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
+                    <h3 className="mb-2 text-xl font-semibold">Thank You!</h3>
                     <p className="text-muted-foreground mb-6">
                       Your message has been sent successfully. We&apos;ll get back to you shortly.
                     </p>
-                    <Button 
+                    <Button
                       onClick={() => setFormState(prev => ({ ...prev, submitted: false }))}
                       className="bg-primary hover:bg-primary/90"
                     >
@@ -135,9 +140,9 @@ export default function ContactForm() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                       <div>
-                        <label htmlFor="name" className="block text-sm font-medium mb-1">
+                        <label htmlFor="name" className="mb-1 block text-sm font-medium">
                           Full Name *
                         </label>
                         <input
@@ -147,11 +152,11 @@ export default function ContactForm() {
                           value={formState.name}
                           onChange={handleChange}
                           required
-                          className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                          className="border-input focus:ring-primary/50 w-full rounded-md border px-3 py-2 focus:ring-2 focus:outline-none"
                         />
                       </div>
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium mb-1">
+                        <label htmlFor="email" className="mb-1 block text-sm font-medium">
                           Email Address *
                         </label>
                         <input
@@ -161,12 +166,12 @@ export default function ContactForm() {
                           value={formState.email}
                           onChange={handleChange}
                           required
-                          className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                          className="border-input focus:ring-primary/50 w-full rounded-md border px-3 py-2 focus:ring-2 focus:outline-none"
                         />
                       </div>
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium mb-1">
+                      <label htmlFor="phone" className="mb-1 block text-sm font-medium">
                         Phone Number
                       </label>
                       <input
@@ -175,11 +180,11 @@ export default function ContactForm() {
                         name="phone"
                         value={formState.phone}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                        className="border-input focus:ring-primary/50 w-full rounded-md border px-3 py-2 focus:ring-2 focus:outline-none"
                       />
                     </div>
                     <div>
-                      <label htmlFor="subject" className="block text-sm font-medium mb-1">
+                      <label htmlFor="subject" className="mb-1 block text-sm font-medium">
                         Subject *
                       </label>
                       <select
@@ -188,7 +193,7 @@ export default function ContactForm() {
                         value={formState.subject}
                         onChange={handleChange}
                         required
-                        className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                        className="border-input focus:ring-primary/50 w-full rounded-md border px-3 py-2 focus:ring-2 focus:outline-none"
                       >
                         <option value="">Select a subject</option>
                         <option value="Admissions Inquiry">Admissions Inquiry</option>
@@ -199,7 +204,7 @@ export default function ContactForm() {
                       </select>
                     </div>
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium mb-1">
+                      <label htmlFor="message" className="mb-1 block text-sm font-medium">
                         Message *
                       </label>
                       <textarea
@@ -209,12 +214,12 @@ export default function ContactForm() {
                         onChange={handleChange}
                         required
                         rows={5}
-                        className="w-full px-3 py-2 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50"
+                        className="border-input focus:ring-primary/50 w-full rounded-md border px-3 py-2 focus:ring-2 focus:outline-none"
                       />
                     </div>
-                    <Button 
-                      type="submit" 
-                      className="w-full bg-primary hover:bg-primary/90"
+                    <Button
+                      type="submit"
+                      className="bg-primary hover:bg-primary/90 w-full"
                       disabled={formState.loading}
                     >
                       {formState.loading ? "Sending..." : "Send Message"}

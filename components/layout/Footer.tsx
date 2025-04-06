@@ -6,12 +6,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-primary text-primary-foreground text-sm md:text-base pt-16 pb-8">
+    <footer className="bg-primary text-primary-foreground pt-16 pb-8 text-sm md:text-base">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
-            <h3 className="text-xl font-bubblegum-sans mb-4">Opus Montessori School</h3>
-            <address className="not-italic flex flex-col gap-2">
+            <h3 className="font-bubblegum-sans mb-4 text-xl">Opus Montessori School</h3>
+            <address className="flex flex-col gap-2 not-italic">
               <div className="flex items-start gap-2">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
                 <span>
@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bubblegum-sans mb-4">Quick Links</h3>
+            <h3 className="font-bubblegum-sans mb-4 text-xl">Quick Links</h3>
             <nav className="flex flex-col gap-2">
               <Link href="/" className="hover:underline">
                 Home
@@ -55,13 +55,13 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-xl font-bubblegum-sans mb-4">Connect With Us</h3>
-            <div className="flex gap-4 mb-6">
+            <h3 className="font-bubblegum-sans mb-4 text-xl">Connect With Us</h3>
+            <div className="mb-6 flex gap-4">
               <a
                 href="https://facebook.com/opusmontessori"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary-foreground/20 hover:bg-primary-foreground/30 p-2 rounded-full transition-colors"
+                className="bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-full p-2 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook size={20} />
@@ -70,14 +70,14 @@ export default function Footer() {
                 href="https://instagram.com/opusmontessorischool"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary-foreground/20 hover:bg-primary-foreground/30 p-2 rounded-full transition-colors"
+                className="bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-full p-2 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="mailto:info@opusmontessori.org"
-                className="bg-primary-foreground/20 hover:bg-primary-foreground/30 p-2 rounded-full transition-colors"
+                className="bg-primary-foreground/20 hover:bg-primary-foreground/30 rounded-full p-2 transition-colors"
                 aria-label="Email"
               >
                 <Mail size={20} />
@@ -92,7 +92,7 @@ export default function Footer() {
 
         <Separator className="bg-primary-foreground/20 my-6" />
 
-        <div className="text-center text-sm text-primary-foreground/70">
+        <div className="text-primary-foreground/70 text-center text-sm">
           <p>© {currentYear} Opus Montessori School. All rights reserved.</p>
           <p className="mt-2">&quot;Educating for Today, Tomorrow and Beyond&quot;</p>
         </div>

@@ -31,19 +31,19 @@ export default function FAQ() {
     <section className="py-20">
       <div className="container mx-auto px-4">
         <motion.div
-          className="text-center mb-12"
+          className="mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">
+          <h2 className="font-bubblegum-sans text-primary mb-4 text-3xl md:text-4xl">
             Frequently Asked Questions
           </h2>
         </motion.div>
 
         <motion.div
-          className="max-w-3xl mx-auto"
+          className="mx-auto max-w-3xl"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

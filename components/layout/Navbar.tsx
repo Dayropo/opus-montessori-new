@@ -55,11 +55,11 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
+        "fixed top-0 right-0 left-0 z-50 transition-all duration-300",
+        scrolled ? "bg-white/90 shadow-sm backdrop-blur-md" : "bg-transparent",
       )}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.jpg"
@@ -70,7 +70,7 @@ export default function Navbar() {
           />
           <div className="flex flex-col">
             <span className="text-primary font-bubblegum-sans text-xl">Opus</span>
-            <span className="text-sm font-bubblegum-sans text-muted-foreground">
+            <span className="font-bubblegum-sans text-muted-foreground text-sm">
               Montessori School
             </span>
           </div>
@@ -84,7 +84,7 @@ export default function Navbar() {
                 <NavigationMenuItem key={link.href}>
                   {link.children ? (
                     <>
-                      <NavigationMenuTrigger className="bg-transparent hover:bg-accent/50 focus:bg-accent/50 data-[state=open]:bg-accent/50">
+                      <NavigationMenuTrigger className="hover:bg-accent/50 focus:bg-accent/50 data-[state=open]:bg-accent/50 bg-transparent">
                         {link.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -94,9 +94,9 @@ export default function Navbar() {
                               <NavigationMenuLink asChild>
                                 <Link
                                   href={child.href}
-                                  className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                  className="hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block space-y-1 rounded-md p-3 leading-none no-underline transition-colors outline-none select-none"
                                 >
-                                  <div className="text-sm font-medium leading-none">
+                                  <div className="text-sm leading-none font-medium">
                                     {child.label}
                                   </div>
                                 </Link>
@@ -111,7 +111,7 @@ export default function Navbar() {
                       href={link.href}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "bg-transparent hover:bg-accent/50 focus:bg-accent/50"
+                        "hover:bg-accent/50 focus:bg-accent/50 bg-transparent",
                       )}
                     >
                       {link.label}
@@ -131,7 +131,7 @@ export default function Navbar() {
                 <Menu size={24} />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] p-6">
+            <SheetContent side="right" className="w-[300px] p-6 sm:w-[400px]">
               <SheetHeader className="mb-6">
                 <SheetTitle className="text-left">
                   <div className="flex items-center gap-2">
@@ -144,7 +144,9 @@ export default function Navbar() {
                     />
                     <div className="flex flex-col">
                       <span className="text-primary font-bubblegum-sans text-lg">Opus</span>
-                      <span className="text-xs font-bubblegum-sans text-muted-foreground">Montessori School</span>
+                      <span className="font-bubblegum-sans text-muted-foreground text-xs">
+                        Montessori School
+                      </span>
                     </div>
                   </div>
                 </SheetTitle>
@@ -159,12 +161,12 @@ export default function Navbar() {
                             {link.label}
                           </AccordionTrigger>
                           <AccordionContent className="pb-2">
-                            <div className="flex flex-col space-y-1 pl-4 border-l-2 border-primary/20">
+                            <div className="border-primary/20 flex flex-col space-y-1 border-l-2 pl-4">
                               {link.children.map(child => (
                                 <Link
                                   key={child.href}
                                   href={child.href}
-                                  className="py-2 px-3 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors rounded-md hover:bg-accent/50"
+                                  className="text-muted-foreground hover:text-foreground hover:bg-accent/50 rounded-md px-3 py-2 text-sm font-medium transition-colors"
                                 >
                                   {child.label}
                                 </Link>
@@ -176,7 +178,7 @@ export default function Navbar() {
                     ) : (
                       <Link
                         href={link.href}
-                        className="block py-3 text-foreground hover:text-primary transition-colors text-sm font-medium"
+                        className="text-foreground hover:text-primary block py-3 text-sm font-medium transition-colors"
                       >
                         {link.label}
                       </Link>

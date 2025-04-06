@@ -4,9 +4,18 @@ All notable changes to the Opus Montessori School website project will be docume
 
 ## [Unreleased]
 
+## [0.1.4] - 2025-04-06
+
+### Added
+- Prettier code formatting
+  - Added Prettier configuration with Tailwind CSS plugin
+  - Added format scripts to package.json
+  - Applied consistent code formatting across all files
+
 ## [0.1.3] - 2025-04-06
 
 ### Fixed
+
 - TypeScript error in blog post page
   - Updated generateMetadata function type definition to match Next.js 15 requirements
   - Fixed build error related to dynamic route parameters
@@ -14,6 +23,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.1.2] - 2025-04-06
 
 ### Fixed
+
 - ESLint errors related to unescaped entities (quotes and apostrophes)
   - Fixed unescaped entities in multiple components and pages
   - Replaced quotes and apostrophes with proper HTML entities
@@ -22,6 +32,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.1.1] - 2025-04-06
 
 ### Changed
+
 - Simplified page titles across the site by removing "| Opus Montessori School" suffix
   - Updated metadata for About, Blog, Contact, Donate, and Admissions pages
   - Updated metadata for individual blog posts
@@ -30,6 +41,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.1.0] - 2025-04-06
 
 ### Added
+
 - Blog functionality
   - Individual blog post pages with dynamic routing using slugs
   - YouTube video embedding capability for blog posts
@@ -41,6 +53,7 @@ All notable changes to the Opus Montessori School website project will be docume
   - Email contact link in footer
 
 ### Fixed
+
 - Next.js App Router dynamic route parameter handling
 - Deprecated social media icons replaced with current versions
 - Typography and spacing consistency across the site
@@ -49,6 +62,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.0.4] - 2025-04-05
 
 ### Added
+
 - Admissions section
   - Admissions process page with step-by-step guide
   - Scholarship information page
@@ -62,6 +76,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.0.3] - 2025-04-05
 
 ### Added
+
 - Home page
   - Hero section with animated elements
   - School introduction and mission statement
@@ -75,6 +90,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.0.2] - 2025-04-05
 
 ### Added
+
 - UI components integration
 - Responsive navigation menu
 - Footer with contact information and quick links
@@ -83,6 +99,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ## [0.0.1] - 2025-04-05
 
 ### Added
+
 - Initial project setup
 - Next.js 14 framework implementation
 - Tailwind CSS configuration
@@ -92,6 +109,7 @@ All notable changes to the Opus Montessori School website project will be docume
 ---
 
 ## Types of Changes
+
 - `Added` for new features
 - `Changed` for changes in existing functionality
 - `Deprecated` for soon-to-be removed features

@@ -11,9 +11,9 @@ interface MainLayoutProps {
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
+    <div className="flex min-h-[100dvh] flex-col">
       <Navbar />
-      <motion.main 
+      <motion.main
         className="flex-1 pt-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
