@@ -4,6 +4,14 @@ All notable changes to the Opus Montessori School website project will be docume
 
 ## [Unreleased]
 
+## [0.1.5] - 2025-04-06
+
+### Fixed
+- Next.js 15 dynamic route parameters handling
+  - Updated blog post page to properly await dynamic route parameters
+  - Fixed "params should be awaited before using its properties" error
+  - Improved type definitions for dynamic route parameters
+
 ## [0.1.4] - 2025-04-06
 
 ### Added
