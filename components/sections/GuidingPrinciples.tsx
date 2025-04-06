@@ -64,7 +64,7 @@ export default function GuidingPrinciples() {
           <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">
             Our Guiding Principles
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
             At Opus Montessori, we believe in nurturing the whole child through these core principles
             that guide our educational approach.
           </p>
@@ -92,7 +92,7 @@ export default function GuidingPrinciples() {
                   <h3 className="text-xl font-semibold mb-2 text-primary">
                     {principle.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm md:text-base">
                     {principle.description}
                   </p>
                 </CardContent>

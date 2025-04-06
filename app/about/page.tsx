@@ -13,21 +13,18 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <MainLayout>
-      <div className="pt-4">
-        <div className="bg-muted/30 py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">About Us</h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Discover our philosophy, mission, and the dedicated team behind Opus Montessori
-              School.
-            </p>
-          </div>
+      <div className="bg-muted/30 py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">About Us</h1>
+          <p className="text-muted-foreground text-sm md:text-base max-w-2xl mx-auto">
+            Discover our philosophy, mission, and the dedicated team behind Opus Montessori School.
+          </p>
         </div>
-
-        <AboutSection />
-        <TeamMembers />
-        <CallToAction />
       </div>
+
+      <AboutSection />
+      <TeamMembers />
+      <CallToAction />
     </MainLayout>
   )
 }

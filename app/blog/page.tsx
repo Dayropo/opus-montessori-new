@@ -18,7 +18,7 @@ export default function BlogPage() {
             <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">
               Opus Blog
             </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
               Educational insights, school updates, and Montessori resources for parents and
               educators.
             </p>

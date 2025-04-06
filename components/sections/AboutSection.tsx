@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function AboutSection() {
   return (
-    <section className="py-20">
+    <section className="py-20 text-sm md:text-base">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div

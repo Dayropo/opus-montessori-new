@@ -11,9 +11,7 @@ export const metadata: Metadata = {
 export default function ScholarshipPage() {
   return (
     <MainLayout>
-      <div className="pt-4">
-        <ScholarshipSection />
-      </div>
+      <ScholarshipSection />
     </MainLayout>
   )
 }

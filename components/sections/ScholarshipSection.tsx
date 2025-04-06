@@ -81,7 +81,7 @@ export default function ScholarshipSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <Image 
-                src="/images/dsck.jpg" 
+                src="/images/0ac68f298fc8e3a473d5cd1d864815026f0ab5a4-960x720.webp" 
                 alt="Bright Beginnings Scholarship" 
                 fill
                 className="object-cover"

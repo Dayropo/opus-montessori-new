@@ -18,7 +18,7 @@ export default function CallToAction() {
           <h2 className="text-3xl md:text-4xl font-bubblegum-sans mb-6">
             Begin Your Child's Montessori Journey Today
           </h2>
-          <p className="text-lg mb-8 text-primary-foreground/90">
+          <p className="text-base md:text-lg mb-8 text-primary-foreground/90">
             Schedule a tour, learn about our enrollment process, or contact us with any questions.
             We're excited to welcome your family to the Opus Montessori community.
           </p>

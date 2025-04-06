@@ -11,19 +11,17 @@ export const metadata: Metadata = {
 export default function AdmissionsProcessPage() {
   return (
     <MainLayout>
-      <div className="pt-4">
-        <div className="bg-muted/30 py-16">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">
-              Admissions Process
-            </h1>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Learn how to enroll your child at Opus Montessori School
-            </p>
-          </div>
+      <div className="bg-muted/30 py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">
+            Admissions Process
+          </h1>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
+            Learn how to enroll your child at Opus Montessori School
+          </p>
         </div>
-        <AdmissionsProcess />
       </div>
+      <AdmissionsProcess />
     </MainLayout>
   )
 }

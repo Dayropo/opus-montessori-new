@@ -70,7 +70,9 @@ export default function Navbar() {
           />
           <div className="flex flex-col">
             <span className="text-primary font-bubblegum-sans text-xl">Opus</span>
-            <span className="text-sm text-muted-foreground">Montessori School</span>
+            <span className="text-sm font-bubblegum-sans text-muted-foreground">
+              Montessori School
+            </span>
           </div>
         </Link>
 
@@ -142,7 +144,7 @@ export default function Navbar() {
                     />
                     <div className="flex flex-col">
                       <span className="text-primary font-bubblegum-sans text-lg">Opus</span>
-                      <span className="text-xs text-muted-foreground">Montessori School</span>
+                      <span className="text-xs font-bubblegum-sans text-muted-foreground">Montessori School</span>
                     </div>
                   </div>
                 </SheetTitle>

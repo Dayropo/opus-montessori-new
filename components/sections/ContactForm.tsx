@@ -78,7 +78,7 @@ export default function ContactForm() {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Opus Montessori School Location"
                 />
-                <div className="p-6">
+                <div className="p-6 text-sm md:text-base">
                   <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
                   <div className="space-y-4">
                     <div>

@@ -43,7 +43,7 @@ export default function AdmissionsProcess() {
           <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">
             Our Admissions Process
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
             We've designed a simple and thoughtful process to help you and your child
             join our Montessori community.
           </p>
@@ -64,7 +64,7 @@ export default function AdmissionsProcess() {
                     {step.icon}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                  <p className="text-muted-foreground text-sm md:text-base">{step.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
