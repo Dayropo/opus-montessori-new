@@ -42,11 +42,14 @@ async function getPostBySlug(slug: string) {
   return blogPosts.find(post => post.slug === slug);
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string }
-}): Promise<Metadata> {
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
   const post = await getPostBySlug(params.slug);
 
   if (!post) {

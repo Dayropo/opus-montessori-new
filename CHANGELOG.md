@@ -4,6 +4,13 @@ All notable changes to the Opus Montessori School website project will be docume
 
 ## [Unreleased]
 
+## [0.1.3] - 2025-04-06
+
+### Fixed
+- TypeScript error in blog post page
+  - Updated generateMetadata function type definition to match Next.js 15 requirements
+  - Fixed build error related to dynamic route parameters
+
 ## [0.1.2] - 2025-04-06
 
 ### Fixed
