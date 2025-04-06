@@ -44,7 +44,7 @@ export default function AdmissionsProcess() {
             Our Admissions Process
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
-            We've designed a simple and thoughtful process to help you and your child
+            We&apos;ve designed a simple and thoughtful process to help you and your child
             join our Montessori community.
           </p>
         </motion.div>

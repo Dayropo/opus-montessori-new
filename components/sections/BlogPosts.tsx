@@ -59,7 +59,7 @@ export default function BlogPosts() {
           <h2 className="text-3xl md:text-4xl font-bubblegum-sans text-primary mb-4">Our Blog</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Insights, tips, and stories from our Montessori community to help you support your
-            child's development and education.
+            child&apos;s development and education.
           </p>
         </motion.div>
 

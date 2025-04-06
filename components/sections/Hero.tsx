@@ -27,7 +27,7 @@ export default function Hero() {
           className="max-w-2xl text-white"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bubblegum-sans mb-4">
-            "Educating for Today, Tomorrow and Beyond"
+            &quot;Educating for Today, Tomorrow and Beyond&quot;
           </h1>
           <p className="text-lg md:text-xl mb-8 text-white/90">
             Opus Montessori School provides the right tools, materials, guidance and space for education.

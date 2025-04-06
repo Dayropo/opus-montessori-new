@@ -10,7 +10,7 @@ export default function BlogNotFound() {
           Blog Post Not Found
         </h1>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
-          We couldn't find the blog post you're looking for. It may have been moved or deleted.
+          We couldn&apos;t find the blog post you&apos;re looking for. It may have been moved or deleted.
         </p>
         <Button asChild>
           <Link href="/blog">Return to Blog</Link>

@@ -18,7 +18,7 @@ export default function AdmissionsPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bubblegum-sans text-primary mb-4">Admissions</h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Join our community of learners and begin your child's Montessori journey.
+            Join our community of learners and begin your child&apos;s Montessori journey.
           </p>
         </div>
       </div>
@@ -74,7 +74,7 @@ export default function AdmissionsPage() {
             </AnimatedElement>
 
             <AnimatedElement className="text-center" animation="fadeIn" delay={0.2}>
-              <p className="text-base md:text-lg mb-6">Have questions about admissions? We're here to help!</p>
+              <p className="text-base md:text-lg mb-6">Have questions about admissions? We&apos;re here to help!</p>
               <Button
                 asChild
                 variant="outline"

@@ -16,11 +16,11 @@ export default function CallToAction() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bubblegum-sans mb-6">
-            Begin Your Child's Montessori Journey Today
+            Begin Your Child&apos;s Montessori Journey Today
           </h2>
           <p className="text-base md:text-lg mb-8 text-primary-foreground/90">
             Schedule a tour, learn about our enrollment process, or contact us with any questions.
-            We're excited to welcome your family to the Opus Montessori community.
+            We&apos;re excited to welcome your family to the Opus Montessori community.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" variant="outline" className="bg-white text-primary hover:bg-white/90 border-none">

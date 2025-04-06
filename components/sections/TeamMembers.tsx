@@ -198,7 +198,7 @@ export default function TeamMembers() {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Our dedicated staff brings years of experience, passion, and expertise to create a
-            nurturing environment for your child's growth and development.
+            nurturing environment for your child&apos;s growth and development.
           </p>
         </motion.div>
 

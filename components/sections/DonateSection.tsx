@@ -114,7 +114,7 @@ export default function DonateSection() {
               <p className="text-muted-foreground mb-4 text-sm md:text-base">
                 For sponsoring our inaugural scholarship program:{" "}
                 <strong>
-                  Bright Beginnings: Empowering Futures for Barrington Area's Children
+                  Bright Beginnings: Empowering Futures for Barrington Area&apos;s Children
                 </strong>
               </p>
               <Button

@@ -55,7 +55,7 @@ export default function ContactForm() {
             Get in Touch
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.
+            We&apos;d love to hear from you! Fill out the form below and we&apos;ll get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -124,7 +124,7 @@ export default function ContactForm() {
                     </div>
                     <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
                     <p className="text-muted-foreground mb-6">
-                      Your message has been sent successfully. We'll get back to you shortly.
+                      Your message has been sent successfully. We&apos;ll get back to you shortly.
                     </p>
                     <Button 
                       onClick={() => setFormState(prev => ({ ...prev, submitted: false }))}

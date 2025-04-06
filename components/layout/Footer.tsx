@@ -94,7 +94,7 @@ export default function Footer() {
 
         <div className="text-center text-sm text-primary-foreground/70">
           <p>© {currentYear} Opus Montessori School. All rights reserved.</p>
-          <p className="mt-2">"Educating for Today, Tomorrow and Beyond"</p>
+          <p className="mt-2">&quot;Educating for Today, Tomorrow and Beyond&quot;</p>
         </div>
       </div>
     </footer>

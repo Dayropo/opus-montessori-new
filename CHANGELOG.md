@@ -4,6 +4,14 @@ All notable changes to the Opus Montessori School website project will be docume
 
 ## [Unreleased]
 
+## [0.1.2] - 2025-04-06
+
+### Fixed
+- ESLint errors related to unescaped entities (quotes and apostrophes)
+  - Fixed unescaped entities in multiple components and pages
+  - Replaced quotes and apostrophes with proper HTML entities
+  - Improved build compatibility for deployment
+
 ## [0.1.1] - 2025-04-06
 
 ### Changed
